@@ -164,7 +164,7 @@ export function useDerivedSwapInfo(): {
   }
 
   if (!parsedAmount) {
-    inputError = inputError ?? 'Enter an amount'
+    inputError = inputError ?? '输入金额'
   }
 
   if (!currencies[Field.INPUT] || !currencies[Field.OUTPUT]) {

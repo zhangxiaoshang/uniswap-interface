@@ -71,27 +71,26 @@ export default function MigrateV1() {
       <AutoColumn gap="16px">
         <AutoRow style={{ alignItems: 'center', justifyContent: 'space-between' }} gap="8px">
           <BackArrow to="/pool" />
-          <TYPE.mediumHeader>Migrate V1 Liquidity</TYPE.mediumHeader>
+          <TYPE.mediumHeader>迁移V1流动性</TYPE.mediumHeader>
           <div>
-            <QuestionHelper text="Migrate your liquidity tokens from Uniswap V1 to Uniswap V2." />
+            <QuestionHelper text="将流动性代币从V1迁移到V2。" />
           </div>
         </AutoRow>
 
         <TYPE.body style={{ marginBottom: 8, fontWeight: 400 }}>
-          For each pool shown below, click migrate to remove your liquidity from Uniswap V1 and deposit it into Uniswap
-          V2.
+          对于下面显示的每个池，点击“迁移”以从Uniswap V1中删除您的流动性并将其存入Uniswap V2.
         </TYPE.body>
 
         {!account ? (
           <LightCard padding="40px">
             <TYPE.body color={theme.text3} textAlign="center">
-              Connect to a wallet to view your V1 liquidity.
+              连接一个钱包查看您的V1流动性.
             </TYPE.body>
           </LightCard>
         ) : isLoading ? (
           <LightCard padding="40px">
             <TYPE.body color={theme.text3} textAlign="center">
-              <Dots>Loading</Dots>
+              <Dots>加载中</Dots>
             </TYPE.body>
           </LightCard>
         ) : (

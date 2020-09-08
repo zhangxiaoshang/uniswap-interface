@@ -70,9 +70,7 @@ export default function PoolFinder() {
 
   const prerequisiteMessage = (
     <LightCard padding="45px 10px">
-      <Text textAlign="center">
-        {!account ? 'Connect to a wallet to find pools' : 'Select a token to find your liquidity.'}
-      </Text>
+      <Text textAlign="center">{!account ? 'Connect to a wallet to find pools' : '选择一个代币以查询您的流动性.'}</Text>
     </LightCard>
   )
 
@@ -95,7 +93,7 @@ export default function PoolFinder() {
             </Row>
           ) : (
             <Text fontWeight={500} fontSize={20} marginLeft={'12px'}>
-              Select a Token
+              选择代币
             </Text>
           )}
         </ButtonDropdownLight>
@@ -119,7 +117,7 @@ export default function PoolFinder() {
             </Row>
           ) : (
             <Text fontWeight={500} fontSize={20} marginLeft={'12px'}>
-              Select a Token
+              选择代币
             </Text>
           )}
         </ButtonDropdownLight>
