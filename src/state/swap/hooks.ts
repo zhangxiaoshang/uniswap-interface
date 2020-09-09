@@ -160,7 +160,7 @@ export function useDerivedSwapInfo(): {
 
   let inputError: string | undefined
   if (!account) {
-    inputError = 'Connect Wallet'
+    inputError = '连接钱包'
   }
 
   if (!parsedAmount) {

@@ -70,7 +70,7 @@ export default function PoolFinder() {
 
   const prerequisiteMessage = (
     <LightCard padding="45px 10px">
-      <Text textAlign="center">{!account ? 'Connect to a wallet to find pools' : '选择一个代币以查询您的流动性.'}</Text>
+      <Text textAlign="center">{!account ? '连接钱包 to find pools' : '选择一个代币以查询您的流动性.'}</Text>
     </LightCard>
   )
 
